@@ -1,0 +1,11 @@
+{
+  "name": "service-stub",
+  "version": "1.0.0",
+  "description": "service stub",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "qinsheng",
+  "license": "MIT"
+}
