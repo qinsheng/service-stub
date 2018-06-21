@@ -1,6 +1,6 @@
 # Service Stub
 
-Create http server quickly.
+Create http server quickly. It's also a simple web framework for node.
 
 ## Usage
 
