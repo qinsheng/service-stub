@@ -6,12 +6,12 @@ const mine = {
   html: 'text/html'
 };
 
-const getContentType = (file) => {
+function getContentType(file) {
   const ext = require('path').extname(file) || '.unknown';
   return mine[ext.slice(1)] || 'text/plain';
-};
+}
 
-const findService = (req, services) => {
+function findService(req, services) {
   const method = req.method;
   const pathname = require('url').parse(req.url).pathname;
   console.log(Date(), method, pathname);
@@ -30,21 +30,21 @@ const findService = (req, services) => {
       }
     }
   }
-};
+}
 
-const response500 = (resp) => {
+function response500(resp) {
   resp.writeHead(500, {'Content-Type': 'text/html'});
   resp.write('<h1>Internal Server Error</h1>');
   resp.end();
-};
+}
 
-const response404 = (resp) => {
+function response404(resp) {
   resp.writeHead(404, {'Content-Type': 'text/html'});
   resp.write('<h1>Page Not Found</h1>');
   resp.end();
-};
+}
 
-const handle = (req, resp, services) => {
+function handle(req, resp, services) {
   const service = findService(req, services);
 
   if (service && service.response) {
