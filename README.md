@@ -1,8 +1,8 @@
 # Service Stub
 
-Create http service quickly
+Create http server quickly.
 
 ## Usage
 
 + run command: ```node main.js```
-+ open browser: ```http://localhost:8899```
++ open browser and navigate to ```http://localhost:8899```
