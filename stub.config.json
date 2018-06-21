@@ -1,7 +1,7 @@
 {
   "port": 8899,
   "services": [{
-    "request": "/"",
+    "request": "/",
     "response": {
       "file": "./demo/index.html"
     }
