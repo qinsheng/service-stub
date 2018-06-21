@@ -1,3 +1,8 @@
-# service-stub
+# Service Stub
 
-Create service (mock/stub) quickly
+Create http service quickly
+
+## Usage
+
++ run command: ```node main.js```
++ open browser: ```http://localhost:8899```
